@@ -1,0 +1,9 @@
+id: get_dog_image
+summary: Fetch a random dog image
+tasks:
+  - id: fetch_dog_image
+    fn: datasource.dogapi.execute
+    args:
+      meta:
+        method: get
+        url: /breeds/image/random

@@ -1,0 +1,14 @@
+"http.get./dog":
+  fn: get_dog_image
+  authn: false
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              status:
+                type: string
